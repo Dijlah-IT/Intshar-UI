@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Bloomberg Arabic";
+  src: url("../fonts/BloombergArabicBetav4-Regular.woff2") format("woff2"),
+    url("../fonts/BloombergArabicBetav4-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bloomberg Arabic";
+  src: url("../fonts/BloombergArabicBetav4-Bold.woff2") format("woff2"),
+    url("../fonts/BloombergArabicBetav4-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bloomberg Arabic", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
