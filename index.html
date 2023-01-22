@@ -4,13 +4,196 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/output.css" />
+    <!-- tailwind -->
+
     <title>الانتشار</title>
   </head>
-  <body>
-    <h1 class="text-[1.6rem] font-bold">سلام دنیا!</h1>
+  <body class="gap-4 dark:bg-night-darker-bg">
+    <header class="sticky top-0 z-50 flex justify-center bg-white shadow">
+      <nav
+        class="flex w-11/12 max-w-screen-xl items-center justify-between gap-8 py-6"
+      >
+        <a
+          href="#"
+          class="flex w-[4.2rem] items-center gap-8 text-5xl font-bold md:w-auto"
+        >
+          <img src="img/logo.svg" alt="" />
+          <h1 class="hidden md:block">الانتشار</h1>
+        </a>
+        <ul class="header-nav m-0 mr-auto hidden list-none gap-10 p-0 md:flex">
+          <li class="current"><a href="#">الرئيسية</a></li>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">الرئيسية</a></li>
+        </ul>
+
+        <button
+          class="header-button hidden rounded-lg border border-secondary py-6 px-8 md:block"
+        >
+          تحميل التطبيق
+        </button>
+
+        <div
+          id="toggle-menu"
+          class="h-[4.2rem] w-[4.2rem] rounded-2xl border-2 border-primary bg-[#EFF0F1] p-4 md:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="w-full fill-primary"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <div class="flex flex-col items-center gap-6">
+      <div class="swiper hero-slider w-11/12 max-w-screen-xl">
+        <div class="swiper-wrapper">
+          <a
+            href="#"
+            class="swiper-slide relative flex rounded-2xl md:w-[90rem]"
+          >
+            <img
+              src="img/photo.jpg"
+              alt=""
+              class="aspect-[90/55] w-full rounded-2xl object-cover"
+            />
+            <h2
+              class="absolute right-[2rem] bottom-[2.5rem] text-[1.8rem] font-bold text-white md:right-[5.5rem] md:bottom-[8rem] md:text-[4rem]"
+            >
+              عنوان الاسلايدر
+            </h2>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide relative flex rounded-2xl md:w-[90rem]"
+          >
+            <img
+              src="img/photo-2.jpg"
+              alt=""
+              class="aspect-[90/55] w-full rounded-2xl object-cover"
+            />
+            <h2
+              class="absolute right-[2rem] bottom-[2.5rem] text-[1.8rem] font-bold text-white md:right-[5.5rem] md:bottom-[8rem] md:text-[4rem]"
+            >
+              عنوان الاسلايدر
+            </h2>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide relative flex rounded-2xl md:w-[90rem]"
+          >
+            <img
+              src="img/photo-3.jpg"
+              alt=""
+              class="aspect-[90/55] w-full rounded-2xl object-cover"
+            />
+            <h2
+              class="absolute right-[2rem] bottom-[2.5rem] text-[1.8rem] font-bold text-white md:right-[5.5rem] md:bottom-[8rem] md:text-[4rem]"
+            >
+              عنوان الاسلايدر
+            </h2>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide relative flex rounded-2xl md:w-[90rem]"
+          >
+            <img
+              src="img/photo.jpg"
+              alt=""
+              class="aspect-[90/55] w-full rounded-2xl object-cover"
+            />
+            <h2
+              class="absolute right-[2rem] bottom-[2.5rem] text-[1.8rem] font-bold text-white md:right-[5.5rem] md:bottom-[8rem] md:text-[4rem]"
+            >
+              عنوان الاسلايدر
+            </h2>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide relative flex rounded-2xl md:w-[90rem]"
+          >
+            <img
+              src="img/photo-2.jpg"
+              alt=""
+              class="aspect-[90/55] w-full rounded-2xl object-cover"
+            />
+            <h2
+              class="absolute right-[2rem] bottom-[2.5rem] text-[1.8rem] font-bold text-white md:right-[5.5rem] md:bottom-[8rem] md:text-[4rem]"
+            >
+              عنوان الاسلايدر
+            </h2>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide relative flex rounded-2xl md:w-[90rem]"
+          >
+            <img
+              src="img/photo-3.jpg"
+              alt=""
+              class="aspect-[90/55] w-full rounded-2xl object-cover"
+            />
+            <h2
+              class="absolute right-[2rem] bottom-[2.5rem] text-[1.8rem] font-bold text-white md:right-[5.5rem] md:bottom-[8rem] md:text-[4rem]"
+            >
+              عنوان الاسلايدر
+            </h2>
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center gap-6">
+        <div class="hero-slider-prev cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="w-8 fill-[#999999]"
+          >
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </div>
+        <div class="hero-slider-pagination"></div>
+        <div class="hero-slider-next cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="w-8 fill-[#999999]"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <footer class="flex flex-col">
+      <div
+        class="mt-12 flex w-11/12 max-w-screen-xl flex-col items-center gap-4 self-center rounded-t-md bg-darker-bg pb-6 md:gap-8 md:pb-12"
+      >
+        <button
+          id="go-top"
+          class="-mt-8 aspect-square w-16 rounded-2xl border border-secondary bg-black p-4 md:-mt-12 md:w-24 md:p-6"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="w-full fill-secondary"
+          >
+            <path
+              d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+            />
+          </svg>
+        </button>
+        <p class="text-[#00000080]">جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
   </body>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/app.js"></script>
 </html>

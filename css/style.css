@@ -1,42 +1,78 @@
-@font-face {
-  font-family: "Bloomberg Arabic";
-  src: url("../fonts/BloombergArabicBetav4-Regular.woff2") format("woff2"),
-    url("../fonts/BloombergArabicBetav4-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Bloomberg Arabic";
-  src: url("../fonts/BloombergArabicBetav4-Bold.woff2") format("woff2"),
-    url("../fonts/BloombergArabicBetav4-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+@import url(swiper-bundle.min.css);
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Bloomberg Arabic";
+    src: url("../fonts/BloombergArabicBetav4-Regular.woff2") format("woff2"),
+      url("../fonts/BloombergArabicBetav4-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Bloomberg Arabic";
+    src: url("../fonts/BloombergArabicBetav4-Bold.woff2") format("woff2"),
+      url("../fonts/BloombergArabicBetav4-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
+:root {
+  --color-primary: #fec200;
+  --color-secondary: #f4cf4b;
+  --color-bg: #d1d2d64f;
+  --color-darkerBg: #d9d9d9;
+  --color-nightBg: #1e2f47;
+  --color-nightDarkerBg: #1e2f47;
 }
 
 body {
-  font-family: "Bloomberg Arabic", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
-img {
-  max-width: 100%;
+.header-nav > li {
+  position: relative;
+}
+.header-nav > li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--color-secondary);
+  top: calc(100% + 5px);
+  left: calc(50% - 6px);
+  transition: width 0.3s;
+}
+.header-nav > li:hover:after {
+  width: 1.2rem;
+}
+.header-nav > li.current:after {
+  width: 1.2rem;
 }
 
-a {
-  text-decoration: none;
+.header-button {
+  background: linear-gradient(
+    99deg,
+    #d9d9d9 1.68%,
+    rgba(217, 217, 217, 0) 98.71%
+  );
+}
+
+.hero-slider-pagination .swiper-pagination-bullet-active {
+  background: #fec200;
 }
