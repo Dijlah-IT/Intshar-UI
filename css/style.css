@@ -45,6 +45,8 @@ body {
   justify-content: space-between;
 }
 
+/* ! header */
+
 .header-nav > li {
   position: relative;
 }
@@ -73,6 +75,29 @@ body {
   );
 }
 
+/* ! pages */
+
+/* * home */
+
 .hero-slider-pagination .swiper-pagination-bullet-active {
-  background: #fec200;
+  background: var(--color-primary);
+}
+
+/* ! footer */
+
+.footer-about::after {
+  content: "";
+  width: 0.4rem;
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  left: -2px;
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-about::after {
+    display: none;
+  }
 }

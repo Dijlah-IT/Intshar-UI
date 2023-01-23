@@ -3,6 +3,15 @@ const heroSlider = new Swiper(".hero-slider", {
   slidesPerView: "auto",
   loop: true,
   effect: "coverflow",
+  spaceBetween: 20,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 0,
+    scale: 1,
+    slideShadows: false,
+    modifier: 1,
+  },
   breakpoints: {
     // when window width is >= 768px
     768: {
@@ -11,7 +20,6 @@ const heroSlider = new Swiper(".hero-slider", {
         stretch: 100,
         depth: 38,
         scale: 1,
-        slideShadows: true,
         modifier: 6.8,
       },
     },
