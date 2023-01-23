@@ -1266,10 +1266,6 @@ html {
   bottom:1rem
 }
 
-.right-24{
-  right:6rem
-}
-
 .right-4{
   right:1rem
 }
@@ -1342,6 +1338,10 @@ html {
   width:2rem
 }
 
+.w-\[40rem\]{
+  width:40rem
+}
+
 .w-7{
   width:1.75rem
 }
@@ -1386,10 +1386,6 @@ html {
   justify-content:space-between
 }
 
-.gap-4{
-  gap:1rem
-}
-
 .gap-8{
   gap:2rem
 }
@@ -1402,12 +1398,24 @@ html {
   gap:1.5rem
 }
 
+.gap-20{
+  gap:5rem
+}
+
 .gap-12{
   gap:3rem
 }
 
+.gap-4{
+  gap:1rem
+}
+
 .gap-5{
   gap:1.25rem
+}
+
+.gap-2{
+  gap:0.5rem
 }
 
 .self-center{
@@ -1463,6 +1471,10 @@ html {
   background-color:rgb(239 240 241 / var(--tw-bg-opacity))
 }
 
+.bg-\[\#D1D2D64F\]{
+  background-color:#D1D2D64F
+}
+
 .bg-darker-bg{
   --tw-bg-opacity:1;
   background-color:rgb(217 217 217 / var(--tw-bg-opacity))
@@ -1471,6 +1483,14 @@ html {
 .bg-black{
   --tw-bg-opacity:1;
   background-color:rgb(0 0 0 / var(--tw-bg-opacity))
+}
+
+.bg-\[url\(\.\.\/img\/about-logo-bg\.svg\)\]{
+  background-image:url(../img/about-logo-bg.svg)
+}
+
+.bg-cover{
+  background-size:cover
 }
 
 .fill-primary{
@@ -1506,12 +1526,24 @@ html {
   padding:1rem
 }
 
+.p-8{
+  padding:2rem
+}
+
 .p-10{
   padding:2.5rem
 }
 
 .p-1{
   padding:0.25rem
+}
+
+.p-12{
+  padding:3rem
+}
+
+.p-16{
+  padding:4rem
 }
 
 .py-6{
@@ -1522,6 +1554,11 @@ html {
 .px-8{
   padding-left:2rem;
   padding-right:2rem
+}
+
+.py-32{
+  padding-top:8rem;
+  padding-bottom:8rem
 }
 
 .py-8{
@@ -1561,6 +1598,11 @@ html {
   line-height:2.25rem
 }
 
+.text-7xl{
+  font-size:4.5rem;
+  line-height:1
+}
+
 .font-bold{
   font-weight:700
 }
@@ -1576,6 +1618,23 @@ html {
 
 .text-\[\#00000080\]{
   color:#00000080
+}
+
+.text-primary{
+  --tw-text-opacity:1;
+  color:rgb(254 194 0 / var(--tw-text-opacity))
+}
+
+.text-\[\]{
+  color:
+}
+
+.text-\[\#00000086\]{
+  color:#00000086
+}
+
+.text-\[\#0000008f\]{
+  color:#0000008f
 }
 
 .shadow{
@@ -1704,20 +1763,12 @@ body {
     bottom:8rem
   }
 
-  .md\:top-4{
-    top:1rem
-  }
-
-  .md\:bottom-4{
-    bottom:1rem
+  .md\:left-auto{
+    left:auto
   }
 
   .md\:right-24{
     right:6rem
-  }
-
-  .md\:left-auto{
-    left:auto
   }
 
   .md\:-mt-12{
@@ -1754,6 +1805,10 @@ body {
 
   .md\:w-24{
     width:6rem
+  }
+
+  .md\:w-\[40rem\]{
+    width:40rem
   }
 
   .md\:flex-row{
