@@ -9,7 +9,7 @@
 
     <title>الانتشار</title>
   </head>
-  <body class="gap-8 dark:bg-night-darker-bg">
+  <body class="dark:bg-night-darker-bg">
     <header class="sticky top-0 z-50 flex justify-center bg-white shadow">
       <nav
         class="flex w-11/12 max-w-screen-xl items-center justify-between gap-8 py-6"
@@ -50,7 +50,8 @@
         </div>
       </nav>
     </header>
-    <div class="flex flex-col items-center gap-6">
+    <!-- hero section -->
+    <div class="flex flex-col items-center gap-6 py-4">
       <div class="swiper hero-slider w-11/12 max-w-screen-xl">
         <div class="swiper-wrapper">
           <a
@@ -171,10 +172,10 @@
         </div>
       </div>
     </div>
-
+    <!-- about section -->
     <div class="flex w-full justify-center bg-[#D1D2D64F] py-32">
       <div
-        class="flex w-11/12 max-w-screen-xl flex-col items-center gap-20 md:flex-row"
+        class="flex w-11/12 max-w-screen-xl flex-col items-center gap-6 md:flex-row md:gap-20"
       >
         <div
           class="flex aspect-square w-full bg-[url(../img/about-logo-bg.svg)] bg-cover p-16 md:w-[40rem]"
@@ -262,7 +263,68 @@
         </div>
       </div>
     </div>
-
+    <!-- features slider -->
+    <div
+      class="flex w-11/12 max-w-screen-xl flex-col items-center gap-4 self-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 md:bg-none"
+    >
+      <img src="img/features-slider-title.svg" alt="" />
+      <div class="swiper feature-slider flex w-full flex-col py-8">
+        <div class="swiper-wrapper">
+          <img
+            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            src="img/splash.jpg"
+            alt=""
+          />
+          <img
+            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            src="img/splash.jpg"
+            alt=""
+          />
+          <img
+            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            src="img/splash.jpg"
+            alt=""
+          />
+          <img
+            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            src="img/splash.jpg"
+            alt=""
+          />
+          <img
+            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            src="img/splash.jpg"
+            alt=""
+          />
+          <img
+            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            src="img/splash.jpg"
+            alt=""
+          />
+        </div>
+        <img
+          src="img/phone.png"
+          alt=""
+          class="feature-slider__mockup absolute z-10 -mt-2 w-[34.5%] self-center md:-mt-4 md:w-[16.41%]"
+        />
+      </div>
+      <div class="flex items-center gap-20 border bg-white py-2 px-4">
+        <div class="feature-slider-prev flex w-6 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+            />
+          </svg>
+        </div>
+        <div class="feature-slider-next flex w-6 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
     <footer class="flex w-11/12 max-w-screen-xl flex-col gap-6 self-center">
       <div class="flex max-w-screen-xl flex-col gap-12 md:flex-row">
         <div

@@ -1,3 +1,4 @@
+// * home hero slider
 const heroSlider = new Swiper(".hero-slider", {
   centeredSlides: true,
   slidesPerView: "auto",
@@ -32,6 +33,44 @@ const heroSlider = new Swiper(".hero-slider", {
     prevEl: ".hero-slider-prev",
   },
 });
+
+// * feature slider
+
+const featureSlider = new Swiper(".feature-slider", {
+  slidesPerView: 3,
+  loop: true,
+  effect: "coverflow",
+  spaceBetween: 0,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: -20,
+    depth: 30,
+    scale: 0.9,
+    modifier: 1,
+  },
+
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 70,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 30,
+        scale: 0.9,
+        modifier: 1,
+      },
+    },
+  },
+
+  navigation: {
+    nextEl: ".feature-slider-next",
+    prevEl: ".feature-slider-prev",
+  },
+});
+
+// * go top
 
 const goTopBtn = document.getElementById("go-top");
 
