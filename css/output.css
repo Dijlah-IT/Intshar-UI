@@ -1390,6 +1390,10 @@ html {
   flex-direction:column
 }
 
+.flex-col-reverse{
+  flex-direction:column-reverse
+}
+
 .items-center{
   align-items:center
 }
@@ -1642,6 +1646,16 @@ html {
   line-height:1
 }
 
+.text-6xl{
+  font-size:3.75rem;
+  line-height:1
+}
+
+.text-4xl{
+  font-size:2.25rem;
+  line-height:2.5rem
+}
+
 .text-xl{
   font-size:1.25rem;
   line-height:1.75rem
@@ -1653,6 +1667,10 @@ html {
 
 .font-bold{
   font-weight:700
+}
+
+.leading-\[1\.6\]{
+  line-height:1.6
 }
 
 .text-white{
@@ -1841,6 +1859,10 @@ body {
 
   .md\:w-\[40rem\]{
     width:40rem
+  }
+
+  .md\:w-1\/2{
+    width:50%
   }
 
   .md\:w-\[16\.41\%\]{

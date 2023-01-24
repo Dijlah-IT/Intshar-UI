@@ -36,38 +36,48 @@ const heroSlider = new Swiper(".hero-slider", {
 
 // * feature slider
 
-const featureSlider = new Swiper(".feature-slider", {
-  slidesPerView: 3,
-  loop: true,
-  effect: "coverflow",
-  spaceBetween: 0,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: -20,
-    depth: 30,
-    scale: 0.9,
-    modifier: 1,
-  },
+if (document.querySelector(".feature-slider")) {
+  const featureSlider = new Swiper(".feature-slider", {
+    slidesPerView: 3,
+    loop: true,
+    effect: "coverflow",
+    spaceBetween: 0,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: -20,
+      depth: 30,
+      scale: 0.9,
+      modifier: 1,
+    },
 
-  breakpoints: {
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 5,
-      spaceBetween: 70,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 30,
-        scale: 0.9,
-        modifier: 1,
+    breakpoints: {
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 70,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 30,
+          scale: 0.9,
+          modifier: 1,
+        },
       },
     },
-  },
 
-  navigation: {
-    nextEl: ".feature-slider-next",
-    prevEl: ".feature-slider-prev",
-  },
+    navigation: {
+      nextEl: ".feature-slider-next",
+      prevEl: ".feature-slider-prev",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+}
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load("home-news", "./js/particlesjs-news-config.json", function () {
+  console.log("callback - particles.js config loaded");
 });
 
 // * go top
