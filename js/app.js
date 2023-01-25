@@ -78,6 +78,8 @@ if (document.querySelector(".feature-slider")) {
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load("home-news__bg", "./js/particlesjs-news-config.json");
 
+particlesJS.load("app-section-bg", "./js/particlesjs-app-sec-config.json");
+
 // * news slider
 
 if (document.querySelector(".news-slider")) {
