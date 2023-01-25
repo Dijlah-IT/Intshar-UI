@@ -83,6 +83,20 @@ body {
   background: var(--color-primary);
 }
 
+.news-slider .swiper-slide {
+  transition: scale 0.3s;
+  height: auto;
+}
+.news-slider .swiper-slide.swiper-slide-active {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+  .news-slider .swiper-slide.swiper-slide-active {
+    scale: 1;
+  }
+}
+
 /* ! footer */
 
 .footer-about::after {
