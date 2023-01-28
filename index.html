@@ -393,9 +393,10 @@
     </div>
 
     <!-- app section -->
-    <div class="flex w-full justify-center bg-[#D1D2D64F] py-32">
+    <div class="relative flex w-full justify-center bg-[#D1D2D64F] py-32">
+      <div id="app-section-bg" class="absolute top-0 h-full w-full"></div>
       <div
-        class="flex w-11/12 max-w-screen-xl flex-col-reverse items-center gap-6 md:flex-row md:gap-20"
+        class="relative flex w-11/12 max-w-screen-xl flex-col-reverse items-center gap-6 md:flex-row md:gap-20"
       >
         <div class="flex w-full flex-col gap-8 md:w-1/2">
           <h2 class="text-6xl font-bold">تطبيق الانتشار</h2>
@@ -407,9 +408,8 @@
           </p>
           <a href="#" class="flex"><img src="img/about-us-btn.svg" alt="" /></a>
         </div>
-        <div class="relative flex w-full justify-center md:w-1/2">
-          <div id="app-section-bg" class="absolute h-full w-full"></div>
-          <img class="relative" src="img/iphone-splash.svg" alt="" />
+        <div class="flex w-full justify-center md:w-1/2">
+          <img src="img/iphone-splash.png" alt="" />
         </div>
       </div>
     </div>
