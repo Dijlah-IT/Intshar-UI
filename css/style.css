@@ -160,7 +160,12 @@ body {
 
 /* * home */
 
-.hero-slider-pagination .swiper-pagination-bullet-active {
+.dark .hero-slider-pagination .swiper-pagination-bullet {
+  background: white;
+}
+
+.hero-slider-pagination .swiper-pagination-bullet-active,
+.dark .hero-slider-pagination .swiper-pagination-bullet-active {
   background: var(--color-primary);
 }
 
