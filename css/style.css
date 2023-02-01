@@ -85,6 +85,31 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    transition: all 0.3s;
+    gap: 0;
+    box-shadow: none;
+  }
+
+  .header-nav a {
+    padding-block: 1.5rem;
+    display: flex;
+  }
+  .header-nav.active {
+    max-height: 100vh;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.247);
+  }
+
+  .header-nav > li:after {
+    top: 90%;
+  }
+}
+
 /* * darkmode btn */
 
 .darkmode-btn {

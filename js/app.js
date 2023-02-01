@@ -38,7 +38,7 @@ const heroSlider = new Swiper(".hero-slider", {
 
 if (document.querySelector(".feature-slider")) {
   const featureSlider = new Swiper(".feature-slider", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     loop: true,
     effect: "coverflow",
     spaceBetween: 0,
@@ -74,6 +74,12 @@ if (document.querySelector(".feature-slider")) {
     },
   });
 }
+
+// * mobile menu
+
+document.getElementById("toggle-menu").addEventListener("click", () => {
+  document.querySelector(".header-nav").classList.toggle("active");
+});
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 

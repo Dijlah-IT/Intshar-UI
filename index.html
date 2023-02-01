@@ -21,7 +21,7 @@
       class="sticky top-0 z-50 flex justify-center bg-white shadow dark:bg-night-darker-bg"
     >
       <nav
-        class="flex w-11/12 max-w-screen-xl items-center justify-between gap-8 py-6"
+        class="relative flex w-11/12 max-w-screen-xl items-center justify-between gap-8 py-6"
       >
         <a
           href="#"
@@ -30,7 +30,9 @@
           <img src="img/logo.svg" alt="" />
           <h1 class="hidden dark:text-white md:block">الانتشار</h1>
         </a>
-        <ul class="header-nav m-0 ml-auto hidden list-none gap-10 p-0 md:flex">
+        <ul
+          class="header-nav absolute top-full -right-[5%] m-0 ml-auto max-h-0 w-[100vw] list-none gap-10 overflow-hidden p-0 transition md:static md:flex md:max-h-max md:w-auto md:overflow-visible"
+        >
           <li class="current">
             <a class="dark:text-white" href="#">الرئيسية</a>
           </li>
@@ -218,9 +220,13 @@
         class="flex w-11/12 max-w-screen-xl flex-col items-center gap-6 md:flex-row md:gap-20"
       >
         <div
-          class="flex aspect-square w-full bg-[url(../img/about-logo-bg.svg)] bg-cover p-16 md:w-[40rem]"
+          class="flex aspect-square h-auto w-full bg-[url(../img/about-logo-bg.svg)] bg-cover p-16 md:w-[40rem]"
         >
-          <img src="img/about-logo.png" alt="" />
+          <img
+            class="aspect-square h-auto w-full"
+            src="img/about-logo.png"
+            alt=""
+          />
         </div>
         <div class="flex grow-1 basis-0 flex-col gap-4">
           <p class="text-3xl text-primary">عن الانتشار</p>
@@ -470,47 +476,49 @@
     </div>
     <!-- features slider -->
     <div
-      class="flex w-11/12 max-w-screen-xl flex-col items-center gap-4 self-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 dark:bg-none md:bg-none"
+      class="flex w-full max-w-screen-xl flex-col items-center gap-4 self-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 dark:bg-none md:w-11/12 md:bg-none"
     >
-      <div class="swiper feature-slider flex w-full flex-col py-8">
+      <div
+        class="swiper feature-slider flex w-full flex-col py-8 px-20 md:px-0"
+      >
         <div class="swiper-wrapper">
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/splash.jpg"
             alt=""
           />
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/002.jpg"
             alt=""
           />
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/003.jpg"
             alt=""
           />
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/004.jpg"
             alt=""
           />
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/005.jpg"
             alt=""
           />
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/006.jpg"
             alt=""
           />
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/007.jpg"
             alt=""
           />
           <img
-            class="swiper-slide aspect-[200/403] rounded-[1.8rem] object-cover"
+            class="swiper-slide aspect-[200/403] rounded-[3.5rem] object-cover"
             src="img/008.jpg"
             alt=""
           />
@@ -518,7 +526,7 @@
         <img
           src="img/phone.png"
           alt=""
-          class="feature-slider__mockup absolute z-10 -mt-2 w-[34.5%] self-center md:-mt-4 md:w-[16.41%]"
+          class="feature-slider__mockup absolute z-10 -mt-4 w-[76%] self-center md:-mt-4 md:w-[16.41%]"
         />
       </div>
       <div class="flex items-center gap-20 border bg-white py-2 px-4">
