@@ -17,7 +17,9 @@
     />
   </head>
   <body class="dark:bg-night-darker-bg">
-    <header class="sticky top-0 z-50 flex justify-center bg-white shadow">
+    <header
+      class="sticky top-0 z-50 flex justify-center bg-white shadow dark:bg-night-darker-bg"
+    >
       <nav
         class="flex w-11/12 max-w-screen-xl items-center justify-between gap-8 py-6"
       >
@@ -26,14 +28,43 @@
           class="flex w-[4.2rem] items-center gap-8 text-5xl font-bold md:w-auto"
         >
           <img src="img/logo.svg" alt="" />
-          <h1 class="hidden md:block">الانتشار</h1>
+          <h1 class="hidden dark:text-white md:block">الانتشار</h1>
         </a>
-        <ul class="header-nav m-0 mr-auto hidden list-none gap-10 p-0 md:flex">
-          <li class="current"><a href="#">الرئيسية</a></li>
-          <li><a href="#">الرئيسية</a></li>
-          <li><a href="#">الرئيسية</a></li>
-          <li><a href="#">الرئيسية</a></li>
+        <ul class="header-nav m-0 ml-auto hidden list-none gap-10 p-0 md:flex">
+          <li class="current">
+            <a class="dark:text-white" href="#">الرئيسية</a>
+          </li>
+          <li><a class="dark:text-white" href="#">الرئيسية</a></li>
+          <li><a class="dark:text-white" href="#">الرئيسية</a></li>
+          <li><a class="dark:text-white" href="#">الرئيسية</a></li>
         </ul>
+
+        <div class="darkmode-btn mr-auto flex">
+          <input type="checkbox" id="darkmode-toggle" />
+          <label
+            for="darkmode-toggle"
+            class="flex flex-row-reverse items-center justify-between px-[11%]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="sun"
+            >
+              <path
+                d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM352 256c0 53-43 96-96 96s-96-43-96-96s43-96 96-96s96 43 96 96zm32 0c0-70.7-57.3-128-128-128s-128 57.3-128 128s57.3 128 128 128s128-57.3 128-128z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+              class="moon"
+            >
+              <path
+                d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+              />
+            </svg>
+          </label>
+        </div>
 
         <button
           class="header-button hidden rounded-lg border border-secondary py-6 px-8 md:block"
@@ -43,7 +74,7 @@
 
         <div
           id="toggle-menu"
-          class="h-[4.2rem] w-[4.2rem] rounded-2xl border-2 border-primary bg-[#EFF0F1] p-4 md:hidden"
+          class="h-[4.2rem] w-[4.2rem] rounded-2xl border-2 border-primary bg-[#EFF0F1] p-4 dark:bg-night-bg md:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +211,9 @@
       </div>
     </div>
     <!-- about section -->
-    <div class="flex w-full justify-center bg-[#D1D2D64F] py-32">
+    <div
+      class="flex w-full justify-center bg-[#D1D2D64F] py-32 dark:bg-night-bg"
+    >
       <div
         class="flex w-11/12 max-w-screen-xl flex-col items-center gap-6 md:flex-row md:gap-20"
       >
@@ -191,7 +224,7 @@
         </div>
         <div class="flex flex-col gap-4">
           <p class="text-3xl text-primary">عن الانتشار</p>
-          <h2 class="text-7xl font-bold">الانتشار</h2>
+          <h2 class="text-7xl font-bold dark:text-white">الانتشار</h2>
 
           <div class="mt-12 flex flex-col gap-8">
             <div class="flex flex-col gap-4">
@@ -213,7 +246,7 @@
                 </svg>
                 مميزات الانتشار
               </p>
-              <p class="text-3xl text-[#0000008f]">
+              <p class="text-3xl text-[#0000008f] dark:text-white">
                 اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
                 القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
               </p>
@@ -237,7 +270,7 @@
                 </svg>
                 مميزات الانتشار
               </p>
-              <p class="text-3xl text-[#0000008f]">
+              <p class="text-3xl text-[#0000008f] dark:text-white">
                 اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
                 القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
               </p>
@@ -261,7 +294,7 @@
                 </svg>
                 مميزات الانتشار
               </p>
-              <p class="text-3xl text-[#0000008f]">
+              <p class="text-3xl text-[#0000008f] dark:text-white">
                 اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
                 القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
               </p>
@@ -277,12 +310,14 @@
         class="absolute top-0 right-0 h-full w-full"
       ></div>
       <div
-        class="relative flex justify-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 md:justify-end md:bg-[url(../img/home-news-line-bg.svg)] md:py-32"
+        class="relative flex justify-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 dark:bg-none md:justify-end md:bg-[url(../img/home-news-line-bg.svg)] md:py-32 md:dark:bg-[url(../img/dark-home-news-line-bg.svg)]"
       >
         <div
           class="flex w-11/12 flex-col items-center justify-between gap-8 md:w-10/12 md:flex-row md:gap-20"
         >
-          <h2 class="hidden whitespace-nowrap text-[5rem] font-bold md:block">
+          <h2
+            class="hidden whitespace-nowrap text-[5rem] font-bold dark:text-white md:block"
+          >
             اخر الاخبار
           </h2>
           <img class="md:hidden" src="img/home-news-mobile-title.svg" alt="" />
@@ -399,31 +434,33 @@
       </div>
     </div>
     <!-- app section -->
-    <div class="relative flex w-full justify-center bg-[#D1D2D64F] py-32">
-      <div id="app-section-bg" class="absolute top-0 h-full w-full"></div>
+    <div
+      class="flex w-full justify-center bg-[#D1D2D64F] py-32 dark:bg-night-bg"
+    >
       <div
-        class="relative flex w-11/12 max-w-screen-xl flex-col-reverse items-center gap-6 md:flex-row md:gap-20"
+        class="flex w-11/12 max-w-screen-xl flex-col-reverse items-center gap-6 md:flex-row md:gap-20"
       >
         <div class="flex w-full flex-col gap-8 md:w-1/2">
-          <h2 class="text-6xl font-bold">تطبيق الانتشار</h2>
-          <p class="text-4xl leading-[1.6]">
+          <h2 class="text-6xl font-bold dark:text-white">تطبيق الانتشار</h2>
+          <p class="text-4xl leading-[1.6] dark:text-white">
             اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر القوى
             التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته الأخرى.
             وكان المتكفل بالحس هو الدماغو المتكفل بالغذاء هو الكبد؛ واحتاج كل
             واحد منهما مركبة من معنيين: أحدهما ما يقع فيه الاشتراك منهما.
           </p>
-          <a href="#" class="flex"><img src="img/about-us-btn.svg" alt="" /></a>
         </div>
-        <div class="flex w-full justify-center md:w-1/2">
-          <img src="img/iphone-splash.png" alt="" />
+        <div
+          class="relative flex w-full justify-center px-[25%] md:w-1/2 md:p-0"
+        >
+          <div id="app-section-bg" class="absolute top-0 h-full w-full"></div>
+          <img class="relative" src="img/iphone-splash.png" alt="" />
         </div>
       </div>
     </div>
     <!-- features slider -->
     <div
-      class="flex w-11/12 max-w-screen-xl flex-col items-center gap-4 self-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 md:bg-none"
+      class="flex w-11/12 max-w-screen-xl flex-col items-center gap-4 self-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 dark:bg-none md:bg-none"
     >
-      <img src="img/features-slider-title.svg" alt="" />
       <div class="swiper feature-slider flex w-full flex-col py-8">
         <div class="swiper-wrapper">
           <img
@@ -492,11 +529,81 @@
     </div>
     <!-- cards -->
     <div
-      class="flex w-full flex-col items-center gap-12 self-center bg-darker-bg py-12"
+      class="flex w-full flex-col items-center self-center bg-[#d1d2d64f] py-12 dark:bg-night-bg md:bg-darker-bg"
     >
-      <img src="img/gift-cards.svg" alt="" />
-      <div class="gift-cards-sec">
-        <div class="flex gap-8">
+      <img class="mb-8" src="img/gift-cards.svg" alt="" />
+      <div class="gift-cards-sec w-full overflow-hidden py-8">
+        <div class="flex w-max gap-8">
+          <a
+            href="#"
+            class="gift-card relative overflow-hidden rounded-2xl"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1433446787703-42d5bf446876?w=320"
+            />
+          </a>
+          <a
+            href="#"
+            class="gift-card relative overflow-hidden rounded-2xl"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1433446787703-42d5bf446876?w=320"
+            />
+          </a>
+          <a
+            href="#"
+            class="gift-card relative overflow-hidden rounded-2xl"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1433446787703-42d5bf446876?w=320"
+            />
+          </a>
+          <a
+            href="#"
+            class="gift-card relative overflow-hidden rounded-2xl"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1433446787703-42d5bf446876?w=320"
+            />
+          </a>
+          <a
+            href="#"
+            class="gift-card relative overflow-hidden rounded-2xl"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1433446787703-42d5bf446876?w=320"
+            />
+          </a>
+          <a
+            href="#"
+            class="gift-card relative overflow-hidden rounded-2xl"
+            data-tilt
+            data-tilt-glare
+            data-tilt-max-glare="0.8"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1433446787703-42d5bf446876?w=320"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="gift-cards-sec w-full overflow-hidden py-8">
+        <div class="flex w-max gap-8">
           <a
             href="#"
             class="gift-card relative overflow-hidden rounded-2xl"
@@ -568,15 +675,17 @@
     </div>
     <!-- features boxes -->
     <div
-      class="flex w-11/12 max-w-screen-xl flex-col items-center gap-12 self-center bg-[url(../img/vertical-line-bg.svg)] bg-contain bg-center bg-no-repeat py-12 md:bg-none"
+      class="flex w-11/12 max-w-screen-xl flex-col items-center gap-12 self-center bg-[url(../img/feature-boxes-bg.svg)] bg-contain bg-center bg-no-repeat py-12 dark:bg-none md:bg-none"
     >
       <img src="img/features-slider-title.svg" alt="" />
       <div
         class="flex w-full flex-col gap-6 md:flex-row md:items-center md:gap-12"
       >
         <div class="flex grow-1 flex-col gap-12">
-          <div class="flex w-full flex-col gap-4 bg-darker-bg p-8">
-            <p class="flex items-center gap-4 font-bold">
+          <div
+            class="flex w-full flex-col gap-4 bg-darker-bg p-8 dark:bg-night-bg"
+          >
+            <p class="flex items-center gap-4 font-bold dark:text-white">
               <svg
                 width="21"
                 height="32"
@@ -590,15 +699,17 @@
                   stroke="#F4CF4B"
                 />
               </svg>
-              تجربة مجانية
+              التصميم
             </p>
-            <p class="">
-              اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
-              القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
+            <p class="dark:text-white">
+              تصميم انيق يعكس الهوية البصرية والعلامة التجارية لشركة الانتشار
+              بطابع عصري حديث، مع مراعاة سهولة الاستفادة والاستخدام.
             </p>
           </div>
-          <div class="flex w-full flex-col gap-4 bg-darker-bg p-8">
-            <p class="flex items-center gap-4 font-bold">
+          <div
+            class="flex w-full flex-col gap-4 bg-darker-bg p-8 dark:bg-night-bg"
+          >
+            <p class="flex items-center gap-4 font-bold dark:text-white">
               <svg
                 width="21"
                 height="32"
@@ -610,17 +721,18 @@
                   d="M5.89952 24.3361H5.39952V24.8361V27.9386V28.4386H5.89952H14.6877H15.1877V27.9386V24.8361V24.3361H14.6877H5.89952ZM0.540771 4.67027C0.540771 2.34883 2.31086 0.516602 4.43484 0.516602H16.1523C18.2763 0.516602 20.0464 2.34883 20.0464 4.67027V26.3874C20.0464 28.7088 18.2763 30.541 16.1523 30.541H4.43484C2.31086 30.541 0.540771 28.7088 0.540771 26.3874V4.67027Z"
                   fill="#4E4E4E"
                   stroke="#F4CF4B"
-                />
-              </svg>
-              تجربة مجانية
+                /></svg
+              >الاداء والسرعة
             </p>
-            <p class="">
-              اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
-              القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
+            <p class="dark:text-white">
+              أداء ثابت وسرعة في عرض النتائج والبيانات، يتيح الحصول على نتائج
+              بفترة قياسية.
             </p>
           </div>
-          <div class="flex w-full flex-col gap-4 bg-darker-bg p-8">
-            <p class="flex items-center gap-4 font-bold">
+          <div
+            class="flex w-full flex-col gap-4 bg-darker-bg p-8 dark:bg-night-bg"
+          >
+            <p class="flex items-center gap-4 font-bold dark:text-white">
               <svg
                 width="21"
                 height="32"
@@ -632,20 +744,21 @@
                   d="M5.89952 24.3361H5.39952V24.8361V27.9386V28.4386H5.89952H14.6877H15.1877V27.9386V24.8361V24.3361H14.6877H5.89952ZM0.540771 4.67027C0.540771 2.34883 2.31086 0.516602 4.43484 0.516602H16.1523C18.2763 0.516602 20.0464 2.34883 20.0464 4.67027V26.3874C20.0464 28.7088 18.2763 30.541 16.1523 30.541H4.43484C2.31086 30.541 0.540771 28.7088 0.540771 26.3874V4.67027Z"
                   fill="#4E4E4E"
                   stroke="#F4CF4B"
-                />
-              </svg>
-              تجربة مجانية
+                /></svg
+              >الحماية والامان
             </p>
-            <p class="">
-              اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
-              القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
+            <p class="dark:text-white">
+              يتم مراعاة أحدث معايير الحماية والأمان في التطبيق، حيث يتم اعتماد
+              عمليات تحقّق إضافية ومنع الوصول غير المصرَّح به إلى حساب المستخدم.
             </p>
           </div>
         </div>
         <img src="img/iphone-splash.png" alt="" />
         <div class="flex grow-1 flex-col gap-12">
-          <div class="flex w-full flex-col gap-4 bg-darker-bg p-8">
-            <p class="flex items-center gap-4 font-bold">
+          <div
+            class="flex w-full flex-col gap-4 bg-darker-bg p-8 dark:bg-night-bg"
+          >
+            <p class="flex items-center gap-4 font-bold dark:text-white">
               <svg
                 width="21"
                 height="32"
@@ -657,17 +770,19 @@
                   d="M5.89952 24.3361H5.39952V24.8361V27.9386V28.4386H5.89952H14.6877H15.1877V27.9386V24.8361V24.3361H14.6877H5.89952ZM0.540771 4.67027C0.540771 2.34883 2.31086 0.516602 4.43484 0.516602H16.1523C18.2763 0.516602 20.0464 2.34883 20.0464 4.67027V26.3874C20.0464 28.7088 18.2763 30.541 16.1523 30.541H4.43484C2.31086 30.541 0.540771 28.7088 0.540771 26.3874V4.67027Z"
                   fill="#4E4E4E"
                   stroke="#F4CF4B"
-                />
-              </svg>
-              تجربة مجانية
+                /></svg
+              >سهولة الاستخدام
             </p>
-            <p class="">
-              اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
-              القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
+            <p class="dark:text-white">
+              واجهة سهلة الاستخدام مع خدمات مميزة لطريقة العرض والتنقل بين
+              الخدمات، والتنوع في عرض الخدمات : طباعة ، مشاركة ، رسائل نصية ،
+              نسخ
             </p>
           </div>
-          <div class="flex w-full flex-col gap-4 bg-darker-bg p-8">
-            <p class="flex items-center gap-4 font-bold">
+          <div
+            class="flex w-full flex-col gap-4 bg-darker-bg p-8 dark:bg-night-bg"
+          >
+            <p class="flex items-center gap-4 font-bold dark:text-white">
               <svg
                 width="21"
                 height="32"
@@ -679,17 +794,19 @@
                   d="M5.89952 24.3361H5.39952V24.8361V27.9386V28.4386H5.89952H14.6877H15.1877V27.9386V24.8361V24.3361H14.6877H5.89952ZM0.540771 4.67027C0.540771 2.34883 2.31086 0.516602 4.43484 0.516602H16.1523C18.2763 0.516602 20.0464 2.34883 20.0464 4.67027V26.3874C20.0464 28.7088 18.2763 30.541 16.1523 30.541H4.43484C2.31086 30.541 0.540771 28.7088 0.540771 26.3874V4.67027Z"
                   fill="#4E4E4E"
                   stroke="#F4CF4B"
-                />
-              </svg>
-              تجربة مجانية
+                /></svg
+              >التنوع
             </p>
-            <p class="">
-              اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
-              القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
+            <p class="dark:text-white">
+              يوفر التطبيق مجموعة واسعة من بطاقات الهدايا الرقمية وكروت الشحن
+              المسبق بأكثر من 200 نوع بطاقة، باسعار تنافسية وخدمة دعم فني
+              ممتازة.
             </p>
           </div>
-          <div class="flex w-full flex-col gap-4 bg-darker-bg p-8">
-            <p class="flex items-center gap-4 font-bold">
+          <div
+            class="flex w-full flex-col gap-4 bg-darker-bg p-8 dark:bg-night-bg"
+          >
+            <p class="flex items-center gap-4 font-bold dark:text-white">
               <svg
                 width="21"
                 height="32"
@@ -701,13 +818,12 @@
                   d="M5.89952 24.3361H5.39952V24.8361V27.9386V28.4386H5.89952H14.6877H15.1877V27.9386V24.8361V24.3361H14.6877H5.89952ZM0.540771 4.67027C0.540771 2.34883 2.31086 0.516602 4.43484 0.516602H16.1523C18.2763 0.516602 20.0464 2.34883 20.0464 4.67027V26.3874C20.0464 28.7088 18.2763 30.541 16.1523 30.541H4.43484C2.31086 30.541 0.540771 28.7088 0.540771 26.3874V4.67027Z"
                   fill="#4E4E4E"
                   stroke="#F4CF4B"
-                />
-              </svg>
-              تجربة مجانية
+                /></svg
+              >التقارير
             </p>
-            <p class="">
-              اشتد في الاستدارة، غابت عنه جميع المحسوسات، وضعف الخيال وسائر
-              القوى التي أصلها منه بحاجته الواحدة، وتكفل له العضو الآخر بحاجته
+            <p class="dark:text-white">
+              امكانية اعداد تقارير مفصلة حسب التاريخ والنوع، حيث يمكن للمستخدم
+              عرض التقارير التي لديه إذن الوصول لها وحسب متطلبات العمل.
             </p>
           </div>
         </div>
@@ -715,7 +831,7 @@
     </div>
     <!-- map -->
     <div
-      class="relative mb-8 flex justify-center bg-[#f6f6f6] bg-contain bg-center bg-no-repeat py-12 md:mb-0 md:bg-white md:bg-[url(../img/home-news-line-bg.svg)] md:py-32"
+      class="relative mb-8 flex justify-center bg-[#f6f6f6] bg-contain bg-center bg-no-repeat py-12 dark:bg-night-darker-bg md:mb-0 md:bg-white md:bg-[url(../img/home-news-line-bg.svg)] md:py-32 md:dark:bg-[url(../img/dark-home-news-line-bg.svg)]"
     >
       <div
         class="flex w-11/12 flex-col-reverse items-center justify-center gap-8 md:w-10/12 md:flex-row md:gap-40"
@@ -827,7 +943,7 @@
           <circle cx="468.8" cy="351.1" id="2"></circle>
         </svg>
         <h2
-          class="whitespace-nowrap text-center text-[2.4rem] font-bold md:block md:text-[3.8rem]"
+          class="whitespace-nowrap text-center text-[2.4rem] font-bold dark:text-white md:block md:text-[3.8rem]"
         >
           آلاف المستخدمين<br />من جميع انحاء العراق
         </h2>
@@ -840,13 +956,16 @@
         class="flex w-11/12 max-w-screen-xl flex-col gap-12 self-center md:flex-row"
       >
         <div
-          class="footer-about relative flex w-full flex-col gap-10 rounded-md bg-darker-bg py-8 px-10 md:w-1/3"
+          class="footer-about relative flex w-full flex-col gap-10 rounded-md bg-darker-bg py-8 px-10 dark:bg-night-bg md:w-1/3"
         >
-          <a href="#" class="flex items-center gap-8 text-5xl font-bold">
+          <a
+            href="#"
+            class="flex items-center gap-8 text-5xl font-bold dark:text-white"
+          >
             <img src="img/logo.svg" alt="" />
             <h1>الانتشار</h1>
           </a>
-          <p class="text-[#00000099]">
+          <p class="text-[#00000099] dark:text-white">
             شركة رائدة في مجال توزيع بطاقات الهدايا الرقمية والخدمات
             الالكترونية، تتميز بطاقم اداري ذو خبرة واسعة في هذا المجال لتصبح
             بذلك واحدة من أفضل الشركات في المنطقة.
@@ -854,7 +973,7 @@
           <div class="flex items-center gap-8">
             <a href="#" class="flex aspect-square w-8">
               <svg
-                class="w-full fill-[#0000008A]"
+                class="w-full fill-[#0000008A] transition-all hover:fill-primary dark:fill-white dark:hover:fill-primary"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -867,7 +986,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="w-full fill-[#0000008A]"
+                class="w-full fill-[#0000008A] transition-all hover:fill-primary dark:fill-white dark:hover:fill-primary"
               >
                 <path
                   d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
@@ -876,7 +995,7 @@
             </a>
             <a href="#" class="flex aspect-square w-8">
               <svg
-                class="w-full fill-[#0000008A]"
+                class="w-full fill-[#0000008A] transition-all hover:fill-primary dark:fill-white dark:hover:fill-primary"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -887,7 +1006,7 @@
             </a>
             <a href="#" class="flex aspect-square w-8">
               <svg
-                class="w-full fill-[#0000008A]"
+                class="w-full fill-[#0000008A] transition-all hover:fill-primary dark:fill-white dark:hover:fill-primary"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -911,12 +1030,12 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <div
-            class="relative flex flex-col justify-between gap-6 rounded-lg border border-primary bg-darker-bg p-10"
+            class="relative flex w-full flex-col justify-between gap-6 rounded-lg border border-primary bg-darker-bg p-10 dark:bg-night-bg md:w-auto"
           >
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
               <div class="flex items-center gap-8">
                 <svg
-                  class="w-7 fill-[#4E4E4E]"
+                  class="w-7 fill-primary"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
@@ -924,19 +1043,19 @@
                     d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
                   />
                 </svg>
-                <p class="text-[1.6rem]">العنوان</p>
+                <p class="font-bold dark:text-white">العنوان</p>
               </div>
               <div class="flex items-center gap-8">
                 <div class="w-7"></div>
-                <p class="text-3xl text-[#00000080]">
+                <p class="text-2xl text-[#00000080] dark:text-white">
                   بغداد زيونه شارع الربيعي بنايه<br />مجمع ركن الربيعي ط 3
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
               <div class="flex items-center gap-8">
                 <svg
-                  class="w-7 fill-[#4E4E4E]"
+                  class="w-7 fill-primary"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -944,22 +1063,26 @@
                     d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
                   />
                 </svg>
-                <p class="text-[1.6rem]">التواصل والدعم الفني</p>
+                <p class="font-bold dark:text-white">التواصل والدعم الفني</p>
               </div>
               <div class="flex items-center gap-8">
                 <div class="w-7"></div>
-                <a href="tel:07700004297" class="text-3xl text-[#00000080]"
+                <a
+                  href="tel:07700004297"
+                  class="text-2xl text-[#00000080] dark:text-white"
                   >07700004297</a
                 >
-                <a href="tel:07730305550" class="text-3xl text-[#00000080]"
+                <a
+                  href="tel:07730305550"
+                  class="text-2xl text-[#00000080] dark:text-white"
                   >07730305550</a
                 >
               </div>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
               <div class="flex items-center gap-8">
                 <svg
-                  class="w-7 fill-[#4E4E4E]"
+                  class="w-7 fill-primary"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -967,13 +1090,13 @@
                     d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
                   />
                 </svg>
-                <p class="text-[1.6rem]">البريد الالكتروني</p>
+                <p class="font-bold dark:text-white">البريد الالكتروني</p>
               </div>
               <div class="flex items-center gap-8">
                 <div class="w-7"></div>
                 <a
                   href="mailto:info@inteshar.net"
-                  class="text-3xl text-[#00000080]"
+                  class="text-2xl text-[#00000080] dark:text-white"
                   >info@inteshar.net</a
                 >
               </div>
@@ -982,7 +1105,7 @@
         </div>
       </div>
       <div
-        class="mt-12 flex flex-col items-center gap-4 rounded-t-md bg-darker-bg pb-6 md:gap-8 md:pb-12"
+        class="mt-12 flex flex-col items-center gap-4 rounded-t-md bg-darker-bg pb-6 dark:bg-night-bg md:gap-8 md:pb-12"
       >
         <button
           id="go-top"
@@ -998,7 +1121,7 @@
             />
           </svg>
         </button>
-        <p class="text-[#00000080]">جميع الحقوق محفوظة</p>
+        <p class="text-[#00000080] dark:text-white">جميع الحقوق محفوظة</p>
       </div>
     </footer>
   </body>
@@ -1012,7 +1135,6 @@
     // * iraq map
     if (document.querySelector(".iq-map")) {
       const cities = document.querySelectorAll(".iq-map path");
-
       cities.forEach((city) => {
         city.onmouseover = (event) => {
           tippy(city, {

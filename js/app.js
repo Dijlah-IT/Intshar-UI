@@ -111,3 +111,39 @@ goTopBtn.addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
+// * dark mode
+
+const darkModeToggle = document.getElementById("darkmode-toggle");
+
+const userTheme = localStorage.getItem("theme");
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+console.log(userTheme, systemTheme);
+
+const themeCheck = () => {
+  if (userTheme === "dark" || (!userTheme && systemTheme)) {
+    document.documentElement.classList.add("dark");
+    darkModeToggle.checked = true;
+    return;
+  }
+};
+
+const themeSwitch = (darkMode) => {
+  if (document.documentElement.classList.contains("dark") || !darkMode) {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+    return;
+  }
+  document.documentElement.classList.add("dark");
+  localStorage.setItem("theme", "dark");
+};
+
+darkModeToggle.addEventListener("change", (event) => {
+  themeSwitch(darkModeToggle.checked);
+  console.log(darkModeToggle.checked);
+});
+
+// *
+
+themeCheck();

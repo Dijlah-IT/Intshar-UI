@@ -12,7 +12,7 @@ module.exports = {
       bg: "#D1D2D64F",
       "darker-bg": "#D9D9D9",
       "night-bg": "#1E2F47",
-      "night-darker-bg": "#1E2F47",
+      "night-darker-bg": "#0e1621",
       white: "#fff",
       black: "#000",
     },
