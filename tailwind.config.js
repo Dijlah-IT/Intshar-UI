@@ -15,6 +15,7 @@ module.exports = {
       "night-darker-bg": "#0e1621",
       white: "#fff",
       black: "#000",
+      transparent: "transparent",
     },
     flexGrow: {
       0: 0,
