@@ -16,6 +16,7 @@ module.exports = {
       white: "#fff",
       black: "#000",
       transparent: "transparent",
+      "bg-text": "#00000085",
     },
     flexGrow: {
       0: 0,
