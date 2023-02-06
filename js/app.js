@@ -5,6 +5,9 @@ const heroSlider = new Swiper(".hero-slider", {
   loop: true,
   effect: "coverflow",
   spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+  },
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -41,13 +44,13 @@ if (document.querySelector(".feature-slider")) {
     slidesPerView: 1,
     loop: true,
     effect: "coverflow",
-    spaceBetween: 0,
+    spaceBetween: 20,
     coverflowEffect: {
       rotate: 0,
-      stretch: -20,
-      depth: 30,
-      scale: 0.9,
-      modifier: 1,
+      stretch: 0,
+      depth: 0,
+      scale: 1,
+      modifier: 0,
     },
 
     breakpoints: {
@@ -94,6 +97,9 @@ if (document.querySelector(".news-slider")) {
     spaceBetween: 40,
     slidesPerView: 1,
     loop: true,
+    autoplay: {
+      delay: 3000,
+    },
     breakpoints: {
       768: {
         slidesPerView: 3,
