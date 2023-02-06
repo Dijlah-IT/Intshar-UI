@@ -260,6 +260,12 @@ body {
   }
 }
 
+/* * category page */
+
+.category-cards {
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
 /* ! footer */
 
 .footer-about::after {
