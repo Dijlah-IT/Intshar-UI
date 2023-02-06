@@ -5,6 +5,7 @@ const heroSlider = new Swiper(".hero-slider", {
   loop: true,
   effect: "coverflow",
   spaceBetween: 20,
+  loopedSlides: 1,
   autoplay: {
     delay: 3000,
   },
@@ -19,6 +20,7 @@ const heroSlider = new Swiper(".hero-slider", {
   breakpoints: {
     // when window width is >= 768px
     768: {
+      loopedSlides: 2,
       coverflowEffect: {
         rotate: 0,
         stretch: 100,
@@ -43,6 +45,8 @@ if (document.querySelector(".feature-slider")) {
   const featureSlider = new Swiper(".feature-slider", {
     slidesPerView: 1,
     loop: true,
+    loopedSlides: 3,
+    centeredSlides: true,
     effect: "coverflow",
     spaceBetween: 20,
     coverflowEffect: {
@@ -96,7 +100,7 @@ if (document.querySelector(".news-slider")) {
   const newsSlider = new Swiper(".news-slider", {
     spaceBetween: 40,
     slidesPerView: 1,
-    loop: true,
+    rewind: true,
     autoplay: {
       delay: 3000,
     },
